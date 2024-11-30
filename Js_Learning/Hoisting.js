@@ -12,7 +12,7 @@ function getName() {
 }
 
 var getNameVaribleFunction = function() {
-    console.log("Namste Javascript master check");
+    console.log("Namste Javascript feature branch check");
     // alert('Hi');
 }
 
