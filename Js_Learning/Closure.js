@@ -34,14 +34,58 @@
 // //
 
 //Function can be return from function.
-function x() {
-    var a = 7;
-    function y() {
-        console.log(a);
-    }
-    y();
-    return y;
-}
-var z = x();
-z();//This is known their the lexical scope and where its defined .
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     y();
+//     return y;
+// }
+// var z = x();
+// z();//This is known their the lexical scope and where its defined .
 //7
+
+// function x() {
+//     var a = 7;
+//     function y() {
+//         console.log(a);
+//     }
+//     a = 100;
+//     y();
+//     return y;
+// }
+// var z = x();
+// z();
+// //100
+
+function z() {
+    var b = 900;
+    function x() {
+        var a = 7;
+        function y() {
+            console.log(a, b);
+        }
+        a = 100;
+        y();
+        return y;
+    }
+    x();
+    return x;
+}
+var p = z();
+console.log(p);
+
+//100 900
+
+//Closure are used in
+/*
+Module Design Pattern
+Currying
+Functions like once
+Memoize
+Maintaining state in asynch world
+Settimeouts
+Iterators
+and many more........
+ */
