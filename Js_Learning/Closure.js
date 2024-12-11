@@ -82,10 +82,15 @@ console.log(p);
 /*
 Module Design Pattern
 Currying
+Data Hiding
 Functions like once
 Memoize
 Maintaining state in asynch world
 Settimeouts
 Iterators
 and many more........
+
+Disadvantage:
+Overconsumption of memory.
+The close variable can not be garbage collected till the execution completed.
  */
